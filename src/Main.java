@@ -67,6 +67,37 @@ public class Main {
         System.out.println("________________________________________________");
 
         //Задача 6
+        byte countBananas = 5;        //Колличество бананов, шт
+        short countMilk = 200;        //Колличество молока в мл
+        byte countIceCream = 2;       //Колличество мороженого в брикетах
+        byte countEggs = 4;           //Колличество яиц, шт
+        byte weightBananas = 80;      //Вес одного банана
+        float weightMilk = 1.05f;     //Вес 1 мл молока
+        byte weightEggs = 70;         //Вес 1 яйца
+        byte weightIceCream = 100;    //Вес одного брикета мороженого
+        float weightBreakfest_g = countBananas * weightBananas + countMilk * weightMilk +
+                                countIceCream * weightIceCream + countEggs * weightEggs;
+        float weightBreakfest_kg = weightBreakfest_g / 1000;
+        System.out.println("Завтрак спортсмена составляет " + weightBreakfest_g + " грамм, или "
+                           + weightBreakfest_kg + " кг.");
+        System.out.println("________________________________________________");
+
+        //Задача №7
+        byte excessWeight = 7;        //Лишний вес, кг
+        float programm1 = 0.25f;      //Сброс веса по программе 1, кг
+        float programm2 = 0.500f;     //Сброс веса по программе 2, кг
+        float countDaysPr1 = excessWeight / programm1;
+        float countDaysPr2 = excessWeight / programm2;
+        float meanCountDays = (countDaysPr1 + countDaysPr2) / 2;
+        System.out.println("Если сбрасывать по 250 г в день, то потребуется " + countDaysPr1 + " дней, если " +
+                           "по 500 г - " + countDaysPr2 + " дней. В среднем уйдет " + meanCountDays + " дней.");
+        System.out.println("________________________________________________");
+
+        //Задача 8
+
+
+
+
 
 
 
