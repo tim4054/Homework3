@@ -93,7 +93,34 @@ public class Main {
                            "по 500 г - " + countDaysPr2 + " дней. В среднем уйдет " + meanCountDays + " дней.");
         System.out.println("________________________________________________");
 
+        //Решение через граммы нравится больше, потому что дни получаются целочисленными
+        short excessWeight_g = 7000;        //Лишний вес, г
+        short programm1_g = 250;            //Сброс веса по программе 1, г
+        short programm2_g = 500;            //Сброс веса по программе 2, г
+        int countDaysPr1_g = excessWeight_g / programm1_g;
+        int countDaysPr2_g = excessWeight_g / programm2_g;
+        int meanCountDays_g = (countDaysPr1_g + countDaysPr2_g) / 2;
+        System.out.println("Если сбрасывать по 250 г в день, то потребуется " + countDaysPr1_g + " дней, если " +
+                           "по 500 г - " + countDaysPr2_g + " дней. В среднем уйдет " + meanCountDays_g + " дней.");
+        System.out.println("________________________________________________");
+
         //Задача 8
+        int wageMaria = 67760;
+        int wageKristina = 76230;
+        int wageDenis = 83690;
+        double wageMaria_1 = wageMaria * 1.1;
+        double wageKristina_1 = wageKristina * 1.1;
+        //double wageDenis_1 = wageDenis * 1.1;   //Если оставить так, имеем "Денис теперь получает 92059.00000000001 рублей. Годовой доход вырос на 100428.00000000017 рублей"
+        //double wageDenis_1 = wageDenis * 1.2;   //Если коэффициент 1.2, то считает без проблем
+        double wageDenis_1 = wageDenis * 11 / 10; //Пришлось схитрить
+        double wageDifMaria = (wageMaria_1 - wageMaria) * 12;
+        double wageDifKristina = (wageKristina_1 - wageKristina) * 12;
+        double wageDifDenis = (wageDenis_1 - wageDenis) * 12;
+        System.out.println("Маша теперь получает " + wageMaria_1 + " рублей. Годовой доход вырос на " + wageDifMaria + " рублей");
+        System.out.println("Кристина теперь получает " + wageKristina_1 + " рублей. Годовой доход вырос на " + wageDifKristina + " рублей");
+        System.out.println("Денис теперь получает " + wageDenis_1 + " рублей. Годовой доход вырос на " + wageDifDenis + " рублей");
+
+
 
 
 
